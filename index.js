@@ -1,10 +1,5 @@
 /**
- * @module IndexPage/test
- * @module ListPage/test
- * @description 描述
- * @param {string} a - 
- * @param {number} b -
+ * @requires module:html-webpack-plugin
+ * @description xxx
  */
-export default function (a, b) {
-  return a + b
-}
+const HtmlWebpackPlugin = require('html-webpack-plugin');

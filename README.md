@@ -177,3 +177,85 @@ var d = function () {}
  * @type {function} d - xxxx
  */
 ```
+```js
+/**
+ * @type {Array.<number>} arr - xxxx
+ * @type {number[]} arr - xxxx
+ */
+const arr = [1, 2, 3, 4]
+```
+### @access 访问等级
+```js
+
+class Test {
+  /**
+   * @access private a - 私有
+   */
+  #a = 0;
+
+  constructor () {
+    /**
+     * @access private b - 私有
+     * @access public c - 公共
+     */
+    this._b = 1;
+    this.c = 2;
+  }
+}
+```
+### @author 作者
+```js
+/**
+ * @author AngelinaTyrael <lucky18209714890@gmail.com>
+ */ 
+```
+### @borrows 改变标识符
+### @callback 回调函数
+```js
+function Test () {}
+
+/**
+ * @param {Test~testCallback} cb
+ */
+Test.prototype.a = function (cb) {
+  cb();
+}
+
+/**
+ * @callback Test~testCallback
+ */
+function b () {}
+```
+### @class
+```js
+/**
+ * @class Test - xxxxx
+ * @classdesc xxxxx
+ */
+class Test {
+
+}
+```
+### @constant 常量
+```js
+/**
+ * @constant {string}
+ * @description xxx
+ */
+const TEST = 'test'       
+```
+### @file 文件描述 和 @copyright
+```js
+/**
+ * @file xxx
+ * @copyright xxx
+ */ 
+```
+### @requires 模块依赖
+```js
+/**
+ * @requires module:html-webpack-plugin
+ * @description xxx
+ */
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+```
